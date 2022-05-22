@@ -1,6 +1,6 @@
-name = "LocalCongruence"
-uuid = "b4a58434-6b9d-11ea-1e1d-6f1e65155be8"
-authors = ["Gianmaria Del Monte <g.macmount@gmail.com>"]
+name = "LarCongruence"
+uuid = "b4a58434-6b9d-11ea-1e1d-6f1e65157be9"
+authors = ["Gabriele Romualdi <gab.romualdi@stud.uniroma3.it> <gabriele.romualdi98@gmail.com>", "Simone Chilosi <sim.chilosi@stud.uniroma3.it> <simochilo@gmail.com>"]
 version = "0.1.0"
 
 [deps]
