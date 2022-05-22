@@ -25,3 +25,11 @@ Manifest.toml
 
 #Drop .DS_Store files
 .DS_Store
+
+#Jupyter
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
