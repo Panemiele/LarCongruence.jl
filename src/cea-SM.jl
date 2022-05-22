@@ -1,4 +1,4 @@
-LC = LocalCongruence
+LC = LarCongruence
 
 """
 	cellCongruenceSM(
