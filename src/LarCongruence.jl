@@ -1,4 +1,4 @@
-module LocalCongruence
+module LarCongruence
 	using DataStructures
 	using LinearAlgebraicRepresentation
 	using NearestNeighbors
@@ -12,6 +12,9 @@ module LocalCongruence
 	include("./cea-AA.jl")
 	include("./cea-SM.jl")
 	include("./cea-GB.jl")
+
+	include("./verticesCongruence-optimized.jl")
+	include("./cea-SM-optimized.jl")
 
 	export chainCongruenceSM, chainCongruenceAA, chainCongruenceGB
 end
