@@ -84,7 +84,7 @@ Perform the Geometry `G` congruence and coherently reshape the Topology `T` but 
 """
 function chainCongruenceSM_OPT(G, T; imp=false, ϵ=1e-6)
 	# Perform the Geometry Congruence
-	G, cls = vertCongruenceOptimized2(G; ϵ=ϵ)
+	G, cls = vertCongruenceOptimized(G; ϵ=ϵ)
 	# Build default sign
 	sign = [ones(Int8, length(cl)) for cl in cls]
 	# Update the Topology coherently
