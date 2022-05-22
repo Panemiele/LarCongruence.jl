@@ -1,0 +1,13 @@
+name = "LocalCongruence"
+uuid = "b4a58434-6b9d-11ea-1e1d-6f1e65155be8"
+authors = ["Gianmaria Del Monte <g.macmount@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+GraphBLASInterface = "5f047416-9681-11e9-0804-033d9936201f"
+LinearAlgebraicRepresentation = "95167b0c-186a-594b-a231-52369c6de044"
+NearestNeighbors = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+SparseMM = "3ca99d5a-6b98-11ea-3bb7-df5801fb527a"
+SuiteSparseGraphBLAS = "c2e53296-7b14-11e9-1210-bddfa8111e1d"
