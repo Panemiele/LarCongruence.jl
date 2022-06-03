@@ -1,3 +1,7 @@
+## [CPD22-7a] COMPONENTI DEL GRUPPO
+## Gabriele Romualdi 521111
+## Simone Chilosi 522155
+
 """
 	vertCongruence(V::Lar.Array{Float64,2}; ϵ=1e-6)::Tuple{Lar.Points, Array{Array{Int,1},1}}
 

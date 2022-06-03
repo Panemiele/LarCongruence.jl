@@ -1,3 +1,7 @@
+## [CPD22-7a] COMPONENTI DEL GRUPPO
+## Gabriele Romualdi 521111
+## Simone Chilosi 522155
+
 function __msc0_OPT(D::GrB_Matrix{T}, cols) where T
     r = GrB_Matrix_nrows(D)
     Ires, Xres = ZeroBasedIndex[], T[]

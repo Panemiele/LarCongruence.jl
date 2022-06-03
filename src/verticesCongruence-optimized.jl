@@ -1,3 +1,7 @@
+## [CPD22-7a] COMPONENTI DEL GRUPPO
+## Gabriele Romualdi 521111
+## Simone Chilosi 522155
+
 using Base.Threads;
 
 function vertCongruenceOptimized(V::Matrix{Float64}; ϵ=1e-6)
