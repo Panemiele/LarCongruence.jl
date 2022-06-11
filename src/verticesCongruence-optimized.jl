@@ -4,7 +4,7 @@
 
 using Base.Threads;
 
-function vertCongruenceOptimized(V::Matrix{Float64}; ϵ=1e-6)
+function vertCongruenceOptimized(V::Lar.Array{Float64,2}; ϵ=1e-6)
 	Vcls    = []
 	let visited = [],  kdtree = NearestNeighbors.KDTree(V)
 		@sync for vidx = 1 : size(V, 2)
