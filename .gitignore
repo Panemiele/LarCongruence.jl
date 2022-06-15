@@ -33,3 +33,8 @@ Manifest.toml
 # IPython
 profile_default/
 ipython_config.py
+
+#JetBrains
+.idea
+*.idea
+*/*.idea

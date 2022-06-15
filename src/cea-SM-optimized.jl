@@ -6,29 +6,29 @@ using Base.Threads;
 LC = LarCongruence
 
 """
-	cellCongruenceSM_OPT(
-		cop::Lar.ChainOp,
-		lo_cls::Array{Array{Int,1},1},
-		lo_sign::Array{Array{Int8,1},1};
-		imp = false,
-		d = 0
-	)::Tuple{ Lar.ChainOp,  Array{Array{Int,1},1},  Array{Array{Int8,1},1} }
+cellCongruenceSM_OPT(cop, lo_cls, lo_sign)
 
-Evaluates the Cell Congruence for a Cochain `cop with classes `lo_cls.
+Valuta la congruenza tra celle per una cocatena `cop con classi `lo_cls.
 
-The function determines the new Cochain Operator built from `cop` where
-the lower order cells are merged according to `lo_cls` map.
-`lo_sign` specifies whether a cell must be considered in reverse order.
+La funzione determina il nuovo operatore di cocatena costruito a partire da `cop`
+dove viene eseguito il merge delle celle di ordine inferiore secondo la mappa `lo_cls`.
+`lo_sign` specifica se una cella debba essere considerata nel verso opposto.
 
-If optional paramenter `imp` is set to `true` then FP imprecisions
-are taken into account in the sense that lower order cells may have collided.
-The parameter `d` represent then the order of the cell (that also is the
-least number of lower order cells a current order cell is made of).
+Se il parametro opzionale `imp` vale `true`, allora le imprecizioni vengono tenute in considerazione
+nel senso che le celle di ordine inferiore potrebbero collidere.
+Il parametro `d` rappresenta, quindi l'ordine della cella (corrisponde anche al numero minimo di celle
+ di ordine inferiore di cui la cella corrente deve essere costituita).
 
-The method returns:
- - the new Cochain Operator
- - a map that, for every new cell, identifies the old cells it is made of
- - a map that, for every new cell, specify if old cells have changed ordering.
+# Argomenti
+- `cop::Lar.ChainOp`
+- `lo_cls::Array{Array{Int,1},1}`
+- `lo_sign::Array{Array{Int8,1},1}`
+- `imp = false`
+- `d = 0`
+
+
+# Return
+(Tn[d], cls, sign)::Tuple{ Lar.ChainOp,  Array{Array{Int,1},1},  Array{Array{Int8,1},1} }
 """
 function cellCongruenceSM_OPT(cop, lo_cls, lo_sign; imp = false, d = 0)
 
@@ -79,12 +79,18 @@ function cellCongruenceSM_OPT(cop, lo_cls, lo_sign; imp = false, d = 0)
 end
 
 """
-	chainCongruenceSM_OPT(
-		G::Lar.Points, T::Array{Lar.ChainOp};
-		imp=false, ϵ=1e-6
-	)::Tuple{Lar.Points, Array{Lar.ChainOp}}
+chainCongruenceSM_OPT(G, T)
+Calcola la congruenza della geometria `G` e coerentemente trasforma la topologia `T`
 
-Perform the Geometry `G` congruence and coherently reshape the Topology `T` but with tasks
+# Argomenti
+- `G::Lar.Points`
+- `T::Array{Lar.ChainOp}`
+- `imp=false`
+- `ϵ=1e-6`
+
+# Return
+- `(G, Tn)::Tuple{Lar.Points, TnArray{Lar.ChainOp}}`
+
 """
 function chainCongruenceSM_OPT(G, T; imp=false, ϵ=1e-6)
 	# Perform the Geometry Congruence
