@@ -20,6 +20,7 @@ module LarCongruence
 	include("./verticesCongruence-optimized.jl")
 	include("./cea-SM-optimized.jl")
 	include("./cea-GB-optimized.jl")
+	include("./cea-AA-optimized.jl")
 
 	export chainCongruenceSM, chainCongruenceAA, chainCongruenceGB
 end
