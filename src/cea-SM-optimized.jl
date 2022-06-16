@@ -8,7 +8,8 @@ LC = LarCongruence
 """
 cellCongruenceSM_OPT(cop, lo_cls, lo_sign)
 
-Valuta la congruenza tra celle per una cocatena `cop con classi `lo_cls.
+Valuta la congruenza tra celle per una cocatena `cop` utilizzando le classi `lo_cls`,
+cioè la mappa che identifica per ciascun nuovo vertice calcolato identifica i vecchi vertici di partenza.
 
 La funzione determina il nuovo operatore di cocatena costruito a partire da `cop`
 dove viene eseguito il merge delle celle di ordine inferiore secondo la mappa `lo_cls`.
@@ -28,7 +29,7 @@ Il parametro `d` rappresenta, quindi l'ordine della cella (corrisponde anche al 
 
 
 # Return
-(Tn[d], cls, sign)::Tuple{ Lar.ChainOp,  Array{Array{Int,1},1},  Array{Array{Int8,1},1} }
+(nrows, ho_cls, ho_sign)::Tuple{ Lar.ChainOp,  Array{Array{Int,1},1},  Array{Array{Int8,1},1} }
 """
 function cellCongruenceSM_OPT(cop, lo_cls, lo_sign; imp = false, d = 0)
 

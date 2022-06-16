@@ -42,6 +42,20 @@ function msc_OPT(D::GrB_Matrix{T}, v) where T
 
 end
 
+"""
+cellCongruenceGB_OPT(Delta, classes)
+
+Valuta ed esegue la congruenza tra celle per una geometria (in graphBLAS) `Delta` utilizzando le classi `classes',
+cioè la mappa che identifica per ciascun nuovo vertice calcolato identifica i vecchi vertici di partenza.
+
+# Argomenti
+- `Delta::GrB_Matrix{T}`
+- `classes::Array{Array{Int,1},1}`
+
+
+# Return
+(res, eclasses)::Tuple{Matrix{Float64}, Vector{GrB_Matrix{Int8}}}
+"""
 function cellCongruence_OPT(Delta::GrB_Matrix{T}, classes) where T
     copEV = msc_OPT(Delta, classes)
 
@@ -78,6 +92,18 @@ function cellCongruence_OPT(Delta::GrB_Matrix{T}, classes) where T
     return res, eclasses
 end
 
+"""
+chainCongruenceGB_OPT(W, Top)
+Calcola la congruenza della geometria `W` e coerentemente trasforma la topologia `Top`
+
+# Argomenti
+- `W::Lar.Points`
+- `Top::Vector{GrB_Matrix{Int8}}`
+
+# Return
+- `(V, Topn)::Tuple{Lar.Points, TnArray{Lar.ChainOp}}`
+
+"""
 function chainCongruenceGB_OPT(W, Top)
 	V, cls = LC.vertCongruence(W)
 	cls = [[ZeroBasedIndex(c) for c in cl] for cl in cls]
