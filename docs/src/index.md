@@ -12,7 +12,7 @@ Link ai notebook:
   - `GraphBLAS`: [https://github.com/Panemiele/LarCongruence.jl/examples/notebooks/[CPD22-7a]notebook_GraphBLAS.ipynb](https://github.com/Panemiele/LarCongruence.jl/examples/notebooks/[CPD22-7a]notebook_GraphBLAS.ipynb)
   - `Julia Native Sparse Matrix`: [https://github.com/Panemiele/LarCongruence.jl/examples/notebooks/[CPD22-7a]notebook_JuliaNativeSparseMatrix.ipynb](https://github.com/Panemiele/LarCongruence.jl/examples/notebooks/[CPD22-7a]notebook_JuliaNativeSparseMatrix.ipynb)
 
-# 1 - LarCongruence.jl
+# LarCongruence.jl
 
 `LarCongruence.jl` è una libreria [Julia](http://julialang.org) che fornisce strumenti per gestire congruenze locali di complessi di catene.
 
@@ -31,9 +31,8 @@ risolvendo topologicamente le inesattezze numeriche dell'aritmetica dei floating
  - [```SparseMM.jl```](https://github.com/cvdlab/SparseMM)
  - [```SuiteSparseGraphBLAS```](https://github.com/abhinavmehndiratta/SuiteSparseGraphBLAS.jl)
 
-In aggiunta, [CVD-Lab](https://github.com/cvdlab) provides also
-[ViewerGL](https://github.com/cvdlab/ViewerGL.jl), un OpenGL
-3D viewer interattivo utilizzato negli esempi di questo modulo.
+In aggiunta, [CVD-Lab](https://github.com/cvdlab) fornisce in aggiunta il package
+[ViewerGL](https://github.com/cvdlab/ViewerGL.jl), un viewer OpenGL 3D interattivo utilizzabile per gli esempi di questo modulo.
 
 ## Installazione
 

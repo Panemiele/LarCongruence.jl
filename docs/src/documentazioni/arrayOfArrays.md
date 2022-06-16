@@ -1,8 +1,4 @@
 ```@docs
-LarCongruence.vertCongruenceAA_OPT
-```
-
-```@docs
 LarCongruence.cellCongruenceAA_OPT
 ```
 

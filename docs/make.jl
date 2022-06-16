@@ -18,6 +18,7 @@ Documenter.makedocs(
 		"Grafo delle dipendenze" => "grafoDipendenze.md",
 		"Sviluppo" => "sviluppo.md",
 		"Codice Sorgente e funzioni" => [
+			"Vertices Congruence" => "documentazioni/verticesCongruence.md",
 			"Sparse Matrix" => "documentazioni/sparseMatrix.md",
 			"GraphBLAS" => "documentazioni/graphBLAS.md",
 			"Array of Arrays" => "documentazioni/arrayOfArrays.md",

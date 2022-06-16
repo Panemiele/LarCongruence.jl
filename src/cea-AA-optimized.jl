@@ -22,7 +22,7 @@ Il metodo restituisce:
 - 'V::Lar.Array{Float64,2}'
 
 # Return
-(V, Vlasses)::Tuple{Lar.Points, Array{Array{Int,1},1}}
+- `(V, vclasses)::Tuple{Lar.Points, Array{Array{Int,1},1}}`
 """
 function vertCongruenceAA_OPT(W)
 	err, i, todelete, vclasses = 10^-6, 1, [], []
@@ -47,7 +47,7 @@ function vertCongruenceAA_OPT(W)
 end
 
 """
-cellCongruenceAA_OPT(Delta, inclasses)
+	cellCongruenceAA_OPT(Delta, inclasses)
 
 Valuta la congruenza tra celle per una parte di topologia `Delta` utilizzando le classi `inclasses`,
 cioè la mappa che identifica per ciascun nuovo vertice calcolato i vecchi vertici di partenza, 
@@ -66,7 +66,7 @@ La funzione restituisce:
 
 
 # Return
-(FEnew, outclasses)::Tuple{ Vector{Vector{Int64}},  Vector{Vector{Int64}}}
+- `(FEnew, outclasses)::Tuple{ Vector{Vector{Int64}},  Vector{Vector{Int64}}}`
 """
 function cellCongruenceAA_OPT(Delta,inclasses)
 	cellarray = Lar.cop2lar(Delta)
@@ -93,7 +93,8 @@ function cellCongruenceAA_OPT(Delta,inclasses)
 end
 
 """
-chainCongruenceAA_OPT(W, T)
+	chainCongruenceAA_OPT(W, T)
+	
 Calcola la congruenza della geometria `W` e coerentemente trasforma la topologia `T`
 La funzione restituisce tra matrici di incidenza/adiacenza:
 	- V (il nuovo insieme di vertici calcolato con vertCongruenceAA_OPT)

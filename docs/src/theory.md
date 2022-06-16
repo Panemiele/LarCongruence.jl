@@ -1,5 +1,4 @@
 In questa sezione, verranno introdotti i principali concetti matematici e tecnologici utilizzati all'interno del progetto LarCongruence.jl.
-Verrà proposto, innanzitutto, un approccio teorico al 
 
 ## Matrici Sparse
 In analisi numerica, una matrice sparsa è una matrice i cui valori sono quasi tutti uguali a zero. I pochi valori presenti sono distribuiti in modo casuale, cioè non si concentrano in determinate aree specifiche (Cluster).

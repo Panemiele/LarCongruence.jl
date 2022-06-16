@@ -22,7 +22,7 @@ Il metodo restituisce:
 - 'ϵ=1e-6'
 
 # Return
-(V, Vcls)::Tuple{Lar.Points, Array{Array{Int,1},1}}
+- `(V, Vcls)::Tuple{Lar.Points, Array{Array{Int,1},1}}`
 """
 function vertCongruenceOptimized(V::Lar.Array{Float64,2}; ϵ=1e-6)
 	Vcls    = []
