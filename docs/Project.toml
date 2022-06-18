@@ -1,5 +1,2 @@
 [deps]
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-
-[compat]
-Documenter = "0.27"
+LarCongruence = "b4a58434-6b9d-11ea-1e1d-6f1e65157be9"
