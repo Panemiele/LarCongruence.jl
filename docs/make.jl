@@ -35,3 +35,4 @@ deploydocs(
     repo="github.com/Panemiele/LarCongruence.jl.git",
     versions = nothing,
 )
+
