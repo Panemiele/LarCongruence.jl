@@ -34,5 +34,6 @@ Documenter.makedocs(
 )
 
 deploydocs(;
+	versions = nothing,
     repo="github.com/Panemiele/LarCongruence.jl",
 )

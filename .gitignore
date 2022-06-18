@@ -38,3 +38,6 @@ ipython_config.py
 .idea
 *.idea
 */*.idea
+
+#Build
+docs/build/
