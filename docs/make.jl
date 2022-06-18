@@ -27,7 +27,6 @@ Documenter.makedocs(
 			"Array of Arrays" => "esempi/exampleAA.md",
 		],
 		"Autori" => "authors.md",
-		"Bibliografia" => "bibliography.md"
 	]
 )
 
