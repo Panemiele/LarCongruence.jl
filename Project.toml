@@ -11,7 +11,4 @@ NearestNeighbors = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
 SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
 SparseMM = "3ca99d5a-6b98-11ea-3bb7-df5801fb527a"
 SuiteSparseGraphBLAS = "c2e53296-7b14-11e9-1210-bddfa8111e1d"
-Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 
-[compat]
-Documenter = "0.27"
