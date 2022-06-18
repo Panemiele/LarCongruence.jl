@@ -31,7 +31,7 @@ Documenter.makedocs(
 )
 
 
-deploydocs(;
-	versions = nothing,
+deploydocs(
     repo="github.com/Panemiele/LarCongruence.jl.git",
+    versions = nothing,
 )
