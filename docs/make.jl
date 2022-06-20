@@ -21,11 +21,7 @@ Documenter.makedocs(
 			"GraphBLAS" => "documentazioni/graphBLAS.md",
 			"Array of Arrays" => "documentazioni/arrayOfArrays.md",
 		],
-		"Esempi e risultati" => [
-			"Sparse Matrix" => "esempi/exampleSM.md",
-			"GraphBLAS" => "esempi/exampleGB.md",
-			"Array of Arrays" => "esempi/exampleAA.md",
-		],
+		"Esempi e risultati" => "esempi.md",
 		"Autori" => "authors.md",
 	]
 )

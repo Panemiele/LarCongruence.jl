@@ -4,8 +4,10 @@ Questo repository è stato creato, curato e mantenuto da Gabriele Romualdi e Sim
 
 ### [Gabriele Romualdi](https://github.com/Panemiele)
 
+- [Github](https://github.com/Panemiele)
 - [Linkedin](https://www.linkedin.com/in/gabriele-romualdi/)
 
 ### [Simone Chilosi](https://github.com/simochilo)
 
- - [Linkedin](https://www.linkedin.com/in/simone-chilosi-575260239/)
+- [Github](https://github.com/simochilo)
+- [Linkedin](https://www.linkedin.com/in/simone-chilosi-575260239/)
