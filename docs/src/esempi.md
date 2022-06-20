@@ -18,5 +18,5 @@ L'implementazione SM non ha mostrato grandi miglioramenti, come detto in precede
 L'implementazione GB è stata quella che ha risposto meglio alle modifiche, con evidenti miglioramenti in tutti gli esempi testati. Si nota infatti un netto miglioramento del 65% sui tempi di esecuzione.
 ![GB graph](assets/GBdarkunica.png) 
 # Array of Arrays
-Anche l'implementazione AA ha ottenuto buoni risultati dopo le modifiche, si nota un miglioramento di circa il 60% sui tempi di esecuzione del terzo e quarto esempio, cioè quelli con input di dimensioni maggiori.
+Anche l'implementazione AA ha ottenuto buoni risultati dopo le modifiche, si nota un miglioramento di quasi il 20% sui tempi di esecuzione del primo esempio, uno di circa il 5% sul terzo esempio e un miglioramento del 40% circa sull'esempio randomcubes.
 ![AA graph](assets/AAdarkunica.png) 
