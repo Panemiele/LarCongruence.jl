@@ -1,7 +1,5 @@
 # LarCongruence
-The following repository relates to the project of the Parallel and Distributed Computing course [CPD22] of the Università degli studi Roma Tre carried out by Gabriele Romualdi and Simone Chilosi. The aim of this project is to improve performances of the functions related to LocalCongruence.jl (link: https://github.com/cvdlab/LocalCongruence.jl).
-
-La repository si riferisce al progetto relativo al corso di Calcolo Parallelo e Distribuito [CPD22] dell'Università degli Studi Roma Tre, svolto da Gabriele Romualdi e Simone Chilosi. L'obiettivo del progetto è migliorare le prestazioni delle funzioni presenti all'interno del package LocalCongruence.jl (https://github.com/cvdlab/LocalCongruence.jl)
+Questo repository fa riferimento al progetto relativo al corso di Calcolo Parallelo e Distribuito [CPD22] dell'Università degli Studi Roma Tre, svolto da Gabriele Romualdi e Simone Chilosi. L'obiettivo del progetto è migliorare le prestazioni delle funzioni presenti all'interno del package LocalCongruence.jl (https://github.com/cvdlab/LocalCongruence.jl), mostrandone e commentandone i risultati ottenuti.
 
 | Nome| Matricola | E-mail | Profilo Github |
 |:---|:---|:---|:---|
