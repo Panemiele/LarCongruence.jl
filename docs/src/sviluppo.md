@@ -75,7 +75,7 @@ end
 
 
 # Studio definitivo
-Per lo stadio definitivo sono state apportate diverse modifiche:
+Per lo studio definitivo sono state apportate diverse modifiche:
 * Innanzitutto, è stato modificato il file ce-AA.jl per migliorare i tempi di esecuzione delle funzioni dell'implementazione Array of Arrays, seguendo lo stesso approccio utilizzato durante lo studio esecutivo (macro julia @async, @sync)
 ```julia
 # vertCongruenceAA_OPT
@@ -117,12 +117,12 @@ end
 ```    
 * Sono stati successivamente studiati i package **Images.jl** e **Plots.jl**, utili per visualizzare graficamente matrici e matrici sparse, in modo da poter confrontare in modo visuale e in breve tempo gli output ottenuti tra le diverse versioni delle funzioni, così da poter verificare la loro correttezza. Le funzioni utilizzate per fare ciò sono state 'colorview' del package Images e 'spy' del package Plots.
 
-* È stato aggiunto un nuovo esempio sfruttando la funzione randomcubes presente all'interno del package LinearAlgebraicRepresentation.jl (LAR): tramite questa funzione è possibile generare dei cubi, in numero e dimensioni arbitrari, utilizzabili in esempi dinamici, poichè generati a runtime. Questo esempio risulta essere molto utile in quanto le dimensioni dell'input sono sufficientemente alte da poter verificare correttamente i miglioramenti di performance delle modifiche del codice (miglioramenti effettivamente ottenuti commentati in una prossima sezione della documentazione).
+* È stato aggiunto un nuovo esempio sfruttando la funzione **randomcubes()** presente all'interno del package LinearAlgebraicRepresentation.jl (LAR): tramite questa funzione è possibile generare dei cubi, in numero e dimensioni arbitrari, utilizzabili in esempi dinamici, poichè generati a runtime. Questo esempio risulta essere molto utile in quanto le dimensioni dell'input sono sufficientemente alte da poter verificare correttamente i miglioramenti di performance delle modifiche del codice (miglioramenti effettivamente ottenuti commentati in una prossima sezione della documentazione).
 
 * Sono state generate le nove matrici di incidenza/adiacenza descritte nel paper "LAR-CAD2014-main" ![Nove Matrici](assets/nineMatrices.png)  
-Ciò è stato fatto a partire dal risultato della funzione 'randomcubes', ottenendo le matrici EV e FV e l'array dei vertici V; prese queste, è possibile ricavare tramite prodotto matriciale le seguenti sei matrici: VV, VE, EE, FE, VF, FF. Il procedimento viene mostrato all'interno del notebook [[CPD22-7a]adjacencyMatrices.ipynb](https://github.com/Panemiele/LarCongruence.jl/blob/main/examples/notebooks/[CPD22-7a]adjacencyMatrices.ipynb)
+Ciò è stato fatto a partire dal risultato della funzione 'randomcubes', ottenendo le matrici EV e FV e l'array dei vertici V; prese queste, è possibile ricavare tramite prodotto matriciale le seguenti sei matrici: VV, VE, EE, FE, EF, VF, FF. Il procedimento viene mostrato all'interno del notebook [[CPD22-7a]adjacencyMatrices.ipynb](https://github.com/Panemiele/LarCongruence.jl/blob/main/examples/notebooks/[CPD22-7a]adjacencyMatrices.ipynb)
 
-* Molte funzioni in diverse implementazioni mancavano di opportune docstring, tali docstring sono state quindi aggiunte per garantire maggiore leggibilità.
+* Molte funzioni in diverse implementazioni mancavano di opportune docstring; esse sono state quindi aggiunte per garantire maggiore leggibilità.
 
 
 ## Riferimenti

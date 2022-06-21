@@ -31,7 +31,7 @@ risolvendo topologicamente le inesattezze numeriche dell'aritmetica dei floating
  - [```SparseMM.jl```](https://github.com/cvdlab/SparseMM)
  - [```SuiteSparseGraphBLAS```](https://github.com/abhinavmehndiratta/SuiteSparseGraphBLAS.jl)
 
-In aggiunta, [CVD-Lab](https://github.com/cvdlab) fornisce in aggiunta il package
+In aggiunta, [CVD-Lab](https://github.com/cvdlab) fornisce il package
 [ViewerGL](https://github.com/cvdlab/ViewerGL.jl), un viewer OpenGL 3D interattivo utilizzabile per gli esempi di questo modulo.
 
 ## Installazione
