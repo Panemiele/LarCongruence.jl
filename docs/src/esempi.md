@@ -60,17 +60,17 @@ La funzione chainCongruenceAA() è stata modificata aggiungendo a **cellCongruen
 Questo piccolo esempio è stato proposto per mostrare, innanzitutto, la corretta creazione delle griglie di input e la corretta visualizzazione dell'output. L'approccio seguito in questo esempio (la struttura dell'esempio stesso e l'utilizzo di ViewerGL) verrà riproposto anche nei successivi.
 
 Le due griglie, che differiscono leggermente di posizione e rotazione, sono intersecate fra loro e possiedono, in totale, un numero pari a 54 celle (27 per griglia). Data la traslazione e la rotazione di cui sopra, non è ancora possibile, in questo esempio, mostrare il comportamento della funzione **chainCongruence()**; tuttavia, rimane un buon esempio iniziale per comprendere il dominio applicativo.
-![Edges-Vertices](assets/CuboidGrid/TwoSimpleCuboidsGridEV.png)
-![Facets-Vertices](assets/CuboidGrid/TwoSimpleCuboidsGridFV.png)
+![Edges-Vertices](assets/CuboidGrid/EV.png)
+![Facets-Vertices](assets/CuboidGrid/FV.png)
 Per completare l'esempio e mostrare il pattern seguito nei vari esempi, vengono mostrati ulteriori dettagli grafici; questi permettono, in ordine, di mostrare:
 * vertici e facce della geometria numerati:
-![Numbering](assets/CuboidGrid/TwoSimpleCuboidsGridNumbering.png)
+![Numbering](assets/CuboidGrid/Numbering.png)
 * le facce della geometria:
-![Explode Facets](assets/CuboidGrid/TwoSimpleCuboidsGridFacets.png)
+![Explode Facets](assets/CuboidGrid/Facets.png)
 * gli spigoli della geometria:
-![Explode Edges](assets/CuboidGrid/TwoSimpleCuboidsGridEdges.png)
+![Explode Edges](assets/CuboidGrid/Edges.png)
 * la decomposizione della geometria:
-![Decomposition](assets/CuboidGrid/TwoSimpleCuboidsGridComp.png)
+![Decomposition](assets/CuboidGrid/Comp.png)
 
 # Example 2 - two adjacent cubes on faces
 ### Cubes number: 2
@@ -187,7 +187,7 @@ Come anticipato nella presentazione dell'esempio, ci si aspetterebbe un migliora
 
 
 Come per gli altri esempi, vengono mostrati ulteriori dettagli grafici:
-![Numbering](assets/cuboidsTable//Numbering.png)
+![Numbering](assets/cuboidsTable/Numbering.png)
 ![Explode Facets](assets/cuboidsTable/Facets.png)
 ![Explode Edges](assets/cuboidsTable/Edges.png)
 ![Decomposition](assets/cuboidsTable/Comp.png)
