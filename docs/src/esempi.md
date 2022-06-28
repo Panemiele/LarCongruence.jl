@@ -7,8 +7,8 @@ In questa sezione, verranno mostrati diversi esempi per mostrare la correttezza 
 In questi esempi, sono mostrate anche le differenze tra una versione non ottimizzata di "chainCongruence()" ed una ottimizzata.
 E' stato usato in modo massiccio ViewerGL, così da poter verificare in modo visuale la correttezza dell'output generato.
 
-!!! Tip "Link ai notebook"
-    Questa pagina della documentazione descrive gli esempi utilizzati; tali esempi sono resi disponibili tramite questo link al repository: [[CPD22-7a]Esempi.ipynb](https://github.com/Panemiele/LarCongruence.jl/blob/main/examples/notebooks/%5BCPD22-7a%5DEsempi.ipynb)\\Si consiglia caldamente di consultare tale notebook, in modo tale da poter lanciare gli esempi su un ambiente locale e anche di leggere passo passo le varie operazioni.
+!!! tip "Link ai notebook"
+    Questa pagina della documentazione descrive gli esempi utilizzati; tali esempi sono resi disponibili tramite questo link al repository: [[CPD22-7a]Esempi.ipynb](https://github.com/Panemiele/LarCongruence.jl/blob/main/examples/notebooks/%5BCPD22-7a%5DEsempi.ipynb). Si consiglia caldamente di consultare tale notebook, in modo tale da poter lanciare gli esempi su un ambiente locale e anche di leggere passo passo le varie operazioni.
 
 !!! note "Nota"
     La funzione **chainCongruence()** utilizzata in questi esempi fa riferimento all'implementazione di **Array of Arrays**; verranno mostrati i confronti tra le varie implementazioni nella prossima sezione.
