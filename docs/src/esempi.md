@@ -8,14 +8,16 @@ In questi esempi, sono mostrate anche le differenze tra una versione non ottimiz
 E' stato usato in modo massiccio ViewerGL, così da poter verificare in modo visuale la correttezza dell'output generato.
 
 !!! note "Nota"
-    La funzione **chainCongruence()** utilizzata in questi esempi fa riferimento all'implementazione di ***Array of Arrays***; verranno mostrati i confronti tra le varie implementazioni nella prossima sezione.
+    La funzione **chainCongruence()** utilizzata in questi esempi fa riferimento all'implementazione di **Array of Arrays**; verranno mostrati i confronti tra le varie implementazioni nella prossima sezione.
 
 !!! warning "Limiti di Space Arrangement"
     La funzione **space_arrangement()** usata negli esempi potrebbe impiegare davvero tanto tempo per input molto grandi e, probabilmente, entrerà in loop. Si consiglia, pertanto, di effettuare dei test sulla macchina utilizzata al fine di studiarne i range possibili.![Edges-Vertices](assets/SpaceArrangementTooLong.png)
 
 ## Global Set up
 Prima di lanciare gli esempi, verrà preparato l'ambiente adatto: si importano le librerie necessarie al corretto funzionamento, quali: LinearAlgebraicRepresentation, LarCongruence, ViewerGL.
-Successivamente, vengono definite delle versioni migliorate delle funzioni **chainCongruence()** e **coboundary_1()**: le modifiche apportate fanno si che entrambe le funzioni si comportino in modo adeguato su input di grandi dimenzioni.<br><br>Dopo il set up, si è pronti a lanciare gli esempi in tutta libertà.
+Successivamente, vengono definite delle versioni migliorate delle funzioni **chainCongruence()** e **coboundary_1()**: le modifiche apportate fanno si che entrambe le funzioni si comportino in modo adeguato su input di grandi dimenzioni.
+
+Dopo il set up, si è pronti a lanciare gli esempi in tutta libertà.
 ```julia
 using BenchmarkTools
 using ViewerGL, LinearAlgebra
@@ -44,13 +46,16 @@ GL = ViewerGL;
 ## Chain Congruence - Versioni normale e modificata
 Prima di proseguire con gli esempi, verranno definite le funzioni utilizzate per calcolare la congruenza; in particolare, vengono proposte due versioni:
 * **chainCongruenceAA()**, versione normale della funzione, basata su Array of Arrays;
-* **chainCongruenceAA_OPT()**, versione che sfrutta i tasks.<br>
+* **chainCongruenceAA_OPT()**, versione che sfrutta i tasks.
+
 La funzione chainCongruenceAA() è stata modificata aggiungendo a **cellCongruenceAA_OPT()** l'utilizzo dei tasks, precisamente nel primo for: quì vengono scorse le classi di vertices (se viene chiamata cellCongruenceAA_OPT(T\[1\],vclasses) ) o di edges (se invece viene chiamata cellCongruenceAA(T\[2\],eclasses); la cardinalità di vclasses, per esempio, è pari al numero di vertici della geometria, perciò più grande questa è grande, maggiore è la necessità di rendere asincrona questa porzione di codice. 
 
 
 ## Example 1 - two intersecting cuboids grid
-### Grid size: 3x3x3<br>Cells number: 27x2 = 54
-Questo piccolo esempio è stato proposto per mostrare, innanzitutto, la corretta creazione delle griglie di input e la corretta visualizzazione dell'output. L'approccio seguito in questo esempio (la struttura dell'esempio stesso e l'utilizzo di ViewerGL) verrà riproposto anche nei successivi.<br>
+### Grid size: 3x3x3
+### Cells number: 27x2 = 54
+Questo piccolo esempio è stato proposto per mostrare, innanzitutto, la corretta creazione delle griglie di input e la corretta visualizzazione dell'output. L'approccio seguito in questo esempio (la struttura dell'esempio stesso e l'utilizzo di ViewerGL) verrà riproposto anche nei successivi.
+
 Le due griglie, che differiscono leggermente di posizione e rotazione, sono intersecate fra loro e possiedono, in totale, un numero pari a 54 celle (27 per griglia). Data la traslazione e la rotazione di cui sopra, non è ancora possibile, in questo esempio, mostrare il comportamento della funzione **chainCongruence()**; tuttavia, rimane un buon esempio iniziale per comprendere il dominio applicativo.
 ![Edges-Vertices](assets/3x3x3%20CuboidGrid/TwoSimpleCuboidsGridEV.png)
 ![Facets-Vertices](assets/3x3x3%20CuboidGrid/TwoSimpleCuboidsGridFV.png)
@@ -125,7 +130,9 @@ Come per gli altri esempi, vengono mostrati ulteriori dettagli grafici:
 ![Decomposition](assets/nearCube/Comp.png)
 
 # Example 5 - Grid inside another grid
-### Small Grid: 3x3x3<br>Big grid: 5x5x5<br>Cells number: 27 + 125 = 134
+### Small Grid: 3x3x3
+### Big grid: 5x5x5
+### Cells number: 27 + 125 = 134
 Riprendendo l'esempio precedente sulle griglie (il **numero 1**), ne verranno ora mostrate due di diverse dimensioni, con la più grande sovrapposta alla prima (le due griglie sono perfettamente congruenti sulle celle della più piccola tra le due).
 L'obiettivo di questo esempio è mostrare come, applicando ***chainCongruence()***, sia possibile ridurre notevolmente il numero di vertici, facce e spigoli inizialmente creati, eliminando i doppioni; questa azione è necessaria perché le celle della griglia più piccola sono duplicate (la griglia più grande contiene celle nelle stesse identiche posizioni della più piccola, quindi vertici, spigoli e facce sono duplicate)
 ![Edges-Vertices](assets/littleTwoGrids/EV.png)
@@ -142,7 +149,9 @@ Come per gli altri esempi, vengono mostrati ulteriori dettagli grafici:
 ![Decomposition](assets/littleTwoGrids/Comp.png)
 
 # Example 6 - Grid inside another grid (BIG)
-### Small Grid: 10x10x10<br>Big grid: 15x15x15<br>Cells number: 1000 + 3375  = 4375
+### Small Grid: 10x10x10
+### Big grid: 15x15x15
+### Cells number: 1000 + 3375  = 4375
 Viene replicato l'esempio precedente, ma con dimensioni delle griglie decisamente più grandi (4375 celle contro le 134 dell'esempio precedente). L'obiettivo è quello di spingere il calcolatore ad effettuare calcoli di grande portata, mettendolo in difficoltà. Anche quì, verrà dimostrata la correttezza dell'output, sia della funzione **chainCongruence()**, sia delle funzioni per la presentazione grafica di ViewerGL.
 ![Edges-Vertices](assets/bigTwoGrids/EV.png)
 ![Facets-Vertices](assets/bigTwoGrids/FV.png)
@@ -170,7 +179,9 @@ Come anticipato nella presentazione dell'esempio, ci si aspetterebbe un migliora
 ![chainCongruence() Normale](assets/cuboids%20table/chainCongruenceNormal.png)
 * Versione modificata:
 ![chainCongruence() Modificata](assets/cuboids%20table/chainCongruenceNormal.png)
-<br><br>
+
+
+
 Come per gli altri esempi, vengono mostrati ulteriori dettagli grafici:
 ![Numbering](assets/cuboids%20table/Numbering.png)
 ![Explode Facets](assets/cuboids%20table/Facets.png)
